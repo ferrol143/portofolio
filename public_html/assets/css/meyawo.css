@@ -11194,6 +11194,7 @@ p {
 
 .portfolio-card .portfolio-card-img {
   width: 100%;
+  object-fit: cover;
 }
 
 .portfolio-card .portfolio-card-overlay {
