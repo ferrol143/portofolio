@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="id" data-mode="kerja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("portfolio-mode");
+        if (saved === "kerja" || saved === "showcase") {
+          document.documentElement.dataset.mode = saved;
+        }
+      } catch (error) { }
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <meta name="theme-color" content="#FAFAFB" id="theme-color">
+  <title>Indeks Proyek — Ferrol Azki Mashudi</title>
+  <meta name="description"
+    content="Tujuh proyek Ferrol Azki Mashudi, dari dasbor riset nasional dan situs KSTI 2025 sampai platform POS, outsourcing, marketplace, dan e-commerce.">
+  <meta name="author" content="Ferrol Azki Mashudi">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Nunito:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="proyek.css">
+</head>
+
+<body>
+  <a class="skip" href="#indeks">Langsung ke indeks proyek</a>
+
+  <header class="index-header">
+    <div class="site-max index-header__inner">
+      <a class="index-brand" href="index.html">
+        <span class="index-brand__mark" aria-hidden="true">F</span>
+        <span class="index-brand__text">
+          <span class="index-brand__name">Ferrol Azki Mashudi</span>
+          <span class="index-brand__label mono">Indeks proyek</span>
+        </span>
+      </a>
+
+      <nav class="index-nav" aria-label="Navigasi halaman">
+        <a href="#indeks">Indeks</a>
+        <a href="#riset">Riset</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="index-header__actions">
+        <span class="index-mode-label mono" aria-hidden="true">siang</span>
+        <button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Mode gelap"
+          title="Ganti ke mode gelap">
+          <span class="theme-switch__knob" aria-hidden="true">
+            <svg class="theme-switch__icon theme-switch__icon--sun" viewBox="0 0 16 16" fill="none"
+              stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true">
+              <circle cx="8" cy="8" r="2.4" fill="currentColor" stroke="none" />
+              <path
+                d="M8 1.3v1.7M8 13v1.7M1.3 8h1.7M13 8h1.7M3.5 3.5l1.2 1.2M11.3 11.3l1.2 1.2M12.5 3.5l-1.2 1.2M4.7 11.3l-1.2 1.2" />
+            </svg>
+            <svg class="theme-switch__icon theme-switch__icon--moon" viewBox="0 0 16 16" fill="none"
+              stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13.4 9.8A6 6 0 0 1 6.2 2.6a6 6 0 1 0 7.2 7.2z" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="index-hero" aria-labelledby="index-title">
+      <div class="site-max">
+        <div class="index-hero__meta mono">
+          <span>Ferrol Azki Mashudi</span>
+          <span>Software engineer</span>
+          <span>2026</span>
+        </div>
+
+        <div class="index-hero__grid">
+          <div class="index-hero__lead">
+            <h1 class="index-hero__title" id="index-title">
+              <span class="line"><span>Tujuh proyek.</span></span>
+              <span class="line"><span>Satu cara <em class="accent-word">kerja</em>.</span></span>
+            </h1>
+            <p class="index-hero__lede">
+              Saya Ferrol. Halaman ini merangkum tujuh proyek yang pernah saya kerjakan: dasbor riset nasional,
+              situs acara 7.000+ peserta, platform POS, sampai platform operasional dan marketplace.
+            </p>
+            <div class="index-hero__actions">
+              <a class="btn" href="#indeks">Jelajahi indeks</a>
+              <a class="link" href="index.html">Kembali ke beranda</a>
+            </div>
+          </div>
+
+          <figure class="index-hero__feature">
+            <div class="index-hero__feature-frame">
+              <img src="assets/proyek/peta-bima-1200.webp"
+                srcset="assets/proyek/peta-bima-600.webp 600w, assets/proyek/peta-bima-1200.webp 1200w"
+                sizes="(min-width: 900px) 36vw, 92vw" width="1200" height="750" fetchpriority="high"
+                alt="Tangkapan layar dasbor Peta Bima yang menampilkan peta sebaran penelitian dan panel total penelitian.">
+              <span class="index-hero__feature-badge mono" aria-hidden="true">01</span>
+            </div>
+            <figcaption class="index-hero__caption mono">
+              <span>Peta Bima</span>
+              <span>Dasbor riset nasional</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ul class="index-hero__stats" aria-label="Ringkasan proyek">
+          <li>
+            <span class="index-hero__stat" data-count="7">07</span>
+            <span class="index-hero__stat-label mono">Proyek</span>
+          </li>
+          <li>
+            <span class="index-hero__stat" data-count="2">02</span>
+            <span class="index-hero__stat-label mono">Proyek kementerian</span>
+          </li>
+          <li>
+            <span class="index-hero__stat" data-count="2">02</span>
+            <span class="index-hero__stat-label mono">Juara 1 kompetisi</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="index-ticker" aria-hidden="true">
+        <div class="index-ticker__track">
+          <span class="index-ticker__group">
+            <span>Peta Bima</span><span>KSTI 2025</span><span>siMenu</span><span>Maxpro</span><span>Aeternum</span><span>ProjectHub.ID</span><span>Butchery</span>
+          </span>
+          <span class="index-ticker__group">
+            <span>Peta Bima</span><span>KSTI 2025</span><span>siMenu</span><span>Maxpro</span><span>Aeternum</span><span>ProjectHub.ID</span><span>Butchery</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive" id="indeks" aria-labelledby="archive-title">
+      <div class="site-max">
+        <div class="archive__head" data-reveal>
+          <div>
+            <p class="eyebrow mono">01 / Indeks</p>
+            <h2 class="archive__title" id="archive-title">Tujuh proyek, satu per satu.</h2>
+          </div>
+          <p class="archive__intro">
+            Urutannya dari proyek pemerintahan dan riset, lalu produk operasional, blockchain, dan marketplace.
+            Setiap catatan memuat konteks, peran, dan stack yang saya pakai.
+          </p>
+        </div>
+
+        <div class="archive__bar">
+          <div class="filters" role="group" aria-label="Filter proyek">
+            <button class="filter is-active" type="button" data-filter="semua" aria-pressed="true"
+              aria-controls="project-list">Semua <span class="filter__count">07</span></button>
+            <button class="filter" type="button" data-filter="pemerintahan" aria-pressed="false"
+              aria-controls="project-list">Pemerintahan <span class="filter__count">02</span></button>
+            <button class="filter" type="button" data-filter="produk" aria-pressed="false"
+              aria-controls="project-list">Produk <span class="filter__count">02</span></button>
+            <button class="filter" type="button" data-filter="marketplace" aria-pressed="false"
+              aria-controls="project-list">Marketplace <span class="filter__count">02</span></button>
+            <button class="filter" type="button" data-filter="blockchain" aria-pressed="false"
+              aria-controls="project-list">Blockchain <span class="filter__count">01</span></button>
+          </div>
+          <p class="archive__status mono" role="status" aria-live="polite">Menampilkan 7 proyek.</p>
+        </div>
+
+        <div class="project-list" id="project-list">
+          <article class="project" id="proyek-peta-bima" data-category="pemerintahan" data-reveal
+            aria-labelledby="proyek-peta-bima-title">
+            <figure class="project__media">
+              <img src="assets/proyek/peta-bima-1200.webp"
+                srcset="assets/proyek/peta-bima-600.webp 600w, assets/proyek/peta-bima-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="750" loading="lazy" decoding="async"
+                alt="Tangkapan layar dasbor Peta Bima yang menampilkan peta sebaran penelitian dan panel total penelitian.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">01</span>
+                <span>Peta Bima</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Pemerintahan / Riset</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project__title" id="proyek-peta-bima-title">Peta Bima</h3>
+              <p class="project__desc">
+                Dasbor pemetaan riset nasional yang menghubungkan pernyataan masalah riset dengan delapan fokus Asta
+                Cita. Kementerian memakainya sebagai acuan utama untuk melihat celah riset per wilayah, institusi, dan
+                fokus.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>JavaScript</li>
+                <li>Leaflet</li>
+                <li>Tailwind CSS</li>
+                <li>Deployment</li>
+              </ul>
+              <button class="project__open" type="button" data-project="peta-bima" aria-haspopup="dialog" aria-label="Buka catatan proyek Peta Bima">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project" id="proyek-ksti-2025" data-category="pemerintahan" data-reveal
+            aria-labelledby="proyek-ksti-2025-title">
+            <figure class="project__media">
+              <img src="assets/proyek/ksti-1200.webp"
+                srcset="assets/proyek/ksti-600.webp 600w, assets/proyek/ksti-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="750" loading="lazy" decoding="async"
+                alt="Tangkapan layar beranda KSTI 2025 dengan judul acara, hitung mundur, dan tombol pendaftaran.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">02</span>
+                <span>KSTI 2025</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Pemerintahan / Acara</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project__title" id="proyek-ksti-2025-title">KSTI 2025</h3>
+              <p class="project__desc">
+                Website resmi Konvensi Sains, Teknologi, dan Industri Indonesia. Mencakup pendaftaran, absensi, jadwal,
+                dan informasi untuk 7.000+ peserta.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+              </ul>
+              <button class="project__open" type="button" data-project="ksti-2025" aria-haspopup="dialog" aria-label="Buka catatan proyek KSTI 2025">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project" id="proyek-simenu" data-category="produk" data-reveal
+            aria-labelledby="proyek-simenu-title">
+            <figure class="project__media">
+              <img src="assets/proyek/si-menu-1200.webp"
+                srcset="assets/proyek/si-menu-600.webp 600w, assets/proyek/si-menu-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="770" loading="lazy" decoding="async"
+                alt="Mockup siMenu yang menampilkan alur pemesanan QR Code dan dashboard pesanan.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">03</span>
+                <span>siMenu</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Produk / POS</span>
+                <span>Tugas akhir</span>
+              </div>
+              <h3 class="project__title" id="proyek-simenu-title">siMenu</h3>
+              <p class="project__desc">
+                Platform pemesanan berbasis QR Code untuk restoran. Alurnya mencakup pesanan pelanggan, dapur, waiter,
+                dan dashboard admin dalam satu sistem.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>TypeScript</li>
+                <li>Express</li>
+                <li>Prisma</li>
+                <li>React</li>
+                <li>Docker</li>
+              </ul>
+              <button class="project__open" type="button" data-project="simenu" aria-haspopup="dialog" aria-label="Buka catatan proyek siMenu">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project" id="proyek-maxpro" data-category="produk" data-reveal
+            aria-labelledby="proyek-maxpro-title">
+            <figure class="project__media">
+              <img src="assets/proyek/maxpro-1200.webp"
+                srcset="assets/proyek/maxpro-600.webp 600w, assets/proyek/maxpro-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="791" loading="lazy" decoding="async"
+                alt="Mockup Maxpro yang menampilkan platform pengelolaan outsourcing.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">04</span>
+                <span>Maxpro</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Produk / Outsourcing</span>
+                <span>2024–2026</span>
+              </div>
+              <h3 class="project__title" id="proyek-maxpro-title">Maxpro</h3>
+              <p class="project__desc">
+                Platform berbasis web untuk mengelola proses outsourcing. Saya mengerjakan backend, migrasi API dari
+                Express.js ke NestJS, dan desain database MySQL.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>NestJS</li>
+                <li>Prisma</li>
+                <li>MySQL</li>
+                <li>Next.js</li>
+              </ul>
+              <button class="project__open" type="button" data-project="maxpro" aria-haspopup="dialog" aria-label="Buka catatan proyek Maxpro">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project" id="proyek-aeternum" data-category="blockchain" data-reveal
+            aria-labelledby="proyek-aeternum-title">
+            <figure class="project__media">
+              <img src="assets/proyek/aeternum-1200.webp"
+                srcset="assets/proyek/aeternum-600.webp 600w, assets/proyek/aeternum-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="761" loading="lazy" decoding="async"
+                alt="Mockup Aeternum yang menampilkan sertifikat digital berbasis blockchain.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">05</span>
+                <span>Aeternum</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Blockchain / Sertifikat</span>
+                <span>Kompetisi</span>
+              </div>
+              <h3 class="project__title" id="proyek-aeternum-title">Aeternum</h3>
+              <p class="project__desc">
+                Sertifikat digital yang aman dan terverifikasi dengan teknologi blockchain. Proyek ini mencakup
+                penerbitan, verifikasi, dan halaman publik untuk memeriksa keaslian sertifikat.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>React</li>
+                <li>Ethers.js</li>
+                <li>Web3</li>
+                <li>Truffle</li>
+              </ul>
+              <button class="project__open" type="button" data-project="aeternum" aria-haspopup="dialog" aria-label="Buka catatan proyek Aeternum">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project" id="proyek-projecthub-id" data-category="marketplace" data-reveal
+            aria-labelledby="proyek-projecthub-id-title">
+            <figure class="project__media">
+              <img src="assets/proyek/projecthub-1200.webp"
+                srcset="assets/proyek/projecthub-600.webp 600w, assets/proyek/projecthub-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="761" loading="lazy" decoding="async"
+                alt="Mockup ProjectHub.ID yang menampilkan marketplace proyek dan freelancer.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">06</span>
+                <span>ProjectHub.ID</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Marketplace / Freelance</span>
+              </div>
+              <h3 class="project__title" id="proyek-projecthub-id-title">ProjectHub.ID</h3>
+              <p class="project__desc">
+                Platform marketplace kerja dan proyek yang membantu pengguna merekrut freelancer, mencari pekerjaan,
+                dan mengamankan transaksi.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>Laravel</li>
+                <li>Tailwind CSS</li>
+                <li>Midtrans</li>
+                <li>Pusher</li>
+              </ul>
+              <button class="project__open" type="button" data-project="projecthub-id" aria-haspopup="dialog" aria-label="Buka catatan proyek ProjectHub.ID">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="project" id="proyek-butchery" data-category="marketplace" data-reveal
+            aria-labelledby="proyek-butchery-title">
+            <figure class="project__media">
+              <img src="assets/proyek/butchery-1200.webp"
+                srcset="assets/proyek/butchery-600.webp 600w, assets/proyek/butchery-1200.webp 1200w"
+                sizes="(min-width: 960px) 58vw, 92vw" width="1200" height="770" loading="lazy" decoding="async"
+                alt="Mockup Butchery yang menampilkan katalog dan transaksi jual beli daging.">
+              <figcaption class="project__stamp mono" aria-hidden="true">
+                <span class="project__num">07</span>
+                <span>Butchery</span>
+              </figcaption>
+            </figure>
+            <div class="project__copy">
+              <div class="project__meta mono">
+                <span>Marketplace / E-commerce</span>
+              </div>
+              <h3 class="project__title" id="proyek-butchery-title">Butchery</h3>
+              <p class="project__desc">
+                Platform layanan dan transaksi antara penjual dan pembeli daging. Mencakup katalog produk, keranjang,
+                alamat pengiriman, dan pembayaran.
+              </p>
+              <ul class="project__tags" aria-label="Stack proyek">
+                <li>Laravel</li>
+                <li>Tailwind CSS</li>
+                <li>Midtrans</li>
+                <li>MySQL</li>
+              </ul>
+              <button class="project__open" type="button" data-project="butchery" aria-haspopup="dialog" aria-label="Buka catatan proyek Butchery">
+                Catatan proyek <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="research" id="riset" aria-labelledby="research-title">
+      <div class="site-max">
+        <div class="research__head" data-reveal>
+          <div>
+            <p class="eyebrow mono">02 / Riset</p>
+            <h2 class="research__title" id="research-title">Riset dan jejak kompetisi.</h2>
+          </div>
+          <p class="research__intro">
+            Publikasi dan kompetisi yang menjadi bagian dari perjalanan kerja saya. Keduanya membantu saya menguji
+            keputusan teknis di luar proyek klien.
+          </p>
+        </div>
+
+        <div class="research__grid">
+          <div class="research__pubs" data-reveal>
+            <h3 class="research__label mono">Publikasi</h3>
+            <ul class="pub-list">
+              <li class="pub">
+                <span class="pub__year mono">2024</span>
+                <div class="pub__body">
+                  <p class="pub__title">Pengujian Black Box Testing pada Sistem Website Osha Snack: Pendekatan Teknik
+                    Boundary Value Analysis</p>
+                  <p class="pub__meta">Jurnal Kridatama Sains dan Teknologi Vol. 06 No. 2</p>
+                  <a class="link pub__link" href="https://doi.org/10.53863/kst.v6i02.1407" target="_blank"
+                    rel="noopener" aria-label="Buka DOI publikasi Osha Snack di tab baru">Buka DOI <span
+                      aria-hidden="true">↗</span></a>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub__year mono">2024</span>
+                <div class="pub__body">
+                  <p class="pub__title">Sistem Pengenalan Warna Berbasis OpenCV untuk Mendukung Aksesibilitas pada
+                    Individu dengan Buta Warna</p>
+                  <p class="pub__meta">Jurnal Sistem Informasi dan Ilmu Komputer Vol. 2 No. 4</p>
+                  <a class="link pub__link" href="https://doi.org/10.59581/jusiik-widyakarya.v2i4.4199" target="_blank"
+                    rel="noopener" aria-label="Buka DOI publikasi OpenCV di tab baru">Buka DOI <span
+                      aria-hidden="true">↗</span></a>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub__year mono">2025</span>
+                <div class="pub__body">
+                  <p class="pub__title">Membangun Bisnis Digital melalui Project-Based Learning: Studi Pengembangan
+                    Website Pemesanan Online siMenu</p>
+                  <p class="pub__meta">Switch Jurnal Sains dan Teknologi Informasi Vol. 03 No. 1</p>
+                  <a class="link pub__link" href="https://doi.org/10.62951/switch.v3i1.327" target="_blank"
+                    rel="noopener" aria-label="Buka DOI publikasi siMenu di tab baru">Buka DOI <span
+                      aria-hidden="true">↗</span></a>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub__year mono">2025</span>
+                <div class="pub__body">
+                  <p class="pub__title">Pengembangan Sistem siMenu Menggunakan Metode Waterfall dengan Integrasi
+                    Kecerdasan Bisnis dalam Mendukung Keputusan Bisnis dan Efisiensi Layanan Restoran</p>
+                  <p class="pub__meta">Media Jurnal Informatika Vol. 17 No. 1</p>
+                  <a class="link pub__link" href="https://doi.org/10.35194/mji.v17i1.5304" target="_blank" rel="noopener"
+                    aria-label="Buka DOI publikasi siMenu Waterfall di tab baru">Buka DOI <span
+                      aria-hidden="true">↗</span></a>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub__year mono">2025</span>
+                <div class="pub__body">
+                  <p class="pub__title">Analisis Efektivitas Aplikasi Drops dalam Meningkatkan Penguasaan Kosakata Bahasa
+                    Jepang pada Pemula</p>
+                  <p class="pub__meta">Semantik: Jurnal Riset Ilmu Pendidikan, Bahasa dan Budaya Vol. 3 No. 2</p>
+                  <a class="link pub__link" href="https://doi.org/10.61132/semantik.v3i2.1647" target="_blank"
+                    rel="noopener" aria-label="Buka DOI publikasi Drops di tab baru">Buka DOI <span
+                      aria-hidden="true">↗</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="research__awards" data-reveal>
+            <h3 class="research__label mono">Kompetisi</h3>
+            <ul class="award-list">
+              <li>
+                <span class="award__year mono">2025</span>
+                <span class="award__text">Juara 1 Web Developer Konkiti Competition</span>
+              </li>
+              <li>
+                <span class="award__year mono">2025</span>
+                <span class="award__text">Juara 2 Web Programming Competition INVFEST X ISF 9.0</span>
+              </li>
+              <li>
+                <span class="award__year mono">2024</span>
+                <span class="award__text">Juara 1 Hackathon AgriTechJam by Agriinformatics Himalkom IPB</span>
+              </li>
+              <li>
+                <span class="award__year mono">2023</span>
+                <span class="award__text">Juara 2 AISCOM (Accounting Information System Competition)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="research__note mono">Sumber: CV, repositori kerja, dan catatan DOI publikasi.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontak" aria-labelledby="contact-title">
+      <div class="site-max contact__inner">
+        <p class="eyebrow mono" data-reveal>03 / Kontak</p>
+        <h2 class="display contact__title" id="contact-title" data-reveal>Punya aplikasi web yang perlu dibangun atau
+          dirapikan?</h2>
+        <div class="contact__actions" data-reveal>
+          <a class="btn" href="mailto:ferrolazkimashudi@gmail.com">Email saya</a>
+          <p class="contact__note">Ceritakan konteks, lingkup, dan tenggat lewat email. Saya akan balas dengan langkah
+            yang paling masuk akal.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-max footer__top">
+      <a class="link" href="mailto:ferrolazkimashudi@gmail.com">ferrolazkimashudi@gmail.com</a>
+      <ul class="footer__social">
+        <li><a class="link" href="https://www.linkedin.com/in/ferrol-azki-mashudi/">LinkedIn</a></li>
+        <li><a class="link" href="https://github.com/ferrol143">GitHub</a></li>
+        <li><a class="link" href="index.html">Beranda</a></li>
+      </ul>
+      <p class="footer__copy mono">© <span id="year">2026</span> Ferrol Azki Mashudi</p>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"
+    aria-describedby="dialog-summary">
+    <div class="project-dialog__panel">
+      <div class="project-dialog__top">
+        <p class="project-dialog__kicker mono" id="dialog-kicker"></p>
+        <button class="project-dialog__close" type="button" aria-label="Tutup catatan proyek">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <h2 class="project-dialog__title" id="dialog-title"></h2>
+      <p class="project-dialog__summary" id="dialog-summary"></p>
+      <dl class="project-dialog__facts" id="dialog-facts"></dl>
+      <a class="link project-dialog__link" id="dialog-link" href="#" target="_blank" rel="noopener" hidden></a>
+      <p class="project-dialog__note mono">Tekan Esc untuk menutup.</p>
+    </div>
+  </dialog>
+
+  <script src="vendor/anime.umd.min.js"></script>
+  <script src="proyek.js"></script>
+</body>
+
+</html>

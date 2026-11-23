@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="id" data-mode="kerja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("portfolio-mode");
+        if (saved === "kerja" || saved === "showcase") {
+          document.documentElement.dataset.mode = saved;
+        }
+      } catch (error) { }
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <meta name="theme-color" content="#FAFAFB" id="theme-color">
+  <title>Ferrol Azki Mashudi — Software Engineer</title>
+  <meta name="description"
+    content="Portofolio Ferrol Azki Mashudi, software engineer dengan pengalaman 1,5+ tahun membangun aplikasi web, dari antarmuka dan API sampai rilis.">
+  <meta name="author" content="Ferrol Azki Mashudi">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Nunito:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip" href="#proyek">Langsung ke proyek</a>
+
+  <header class="topbar">
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#proyek">Proyek</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="atas" aria-labelledby="hero-title">
+      <div class="hero__sky" aria-hidden="true">
+        <span class="hero__stars">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="hero__orbit"></span>
+        <span class="hero__orb hero__orb--sun"></span>
+        <span class="hero__orb hero__orb--moon"></span>
+      </div>
+      <div class="site-max hero__inner">
+        <p class="eyebrow mono reveal">Ferrol Azki Mashudi / Software Engineer<span class="eyebrow__year"> / 2026</span>
+        </p>
+        <div class="hero__head">
+          <h1 class="display hero__title reveal" id="hero-title">
+            Dari masalah nyata,<br>
+            jadi sistem yang <em class="accent-word">dipakai</em>.
+          </h1>
+          <div class="hero__mode reveal">
+            <button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Mode gelap"
+              title="Ganti ke mode gelap">
+              <span class="theme-switch__knob" aria-hidden="true">
+                <svg class="theme-switch__icon theme-switch__icon--sun" viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r="2.4" fill="currentColor" stroke="none" />
+                  <path
+                    d="M8 1.3v1.7M8 13v1.7M1.3 8h1.7M13 8h1.7M3.5 3.5l1.2 1.2M11.3 11.3l1.2 1.2M12.5 3.5l-1.2 1.2M4.7 11.3l-1.2 1.2" />
+                </svg>
+                <svg class="theme-switch__icon theme-switch__icon--moon" viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M13.4 9.8A6 6 0 0 1 6.2 2.6a6 6 0 1 0 7.2 7.2z" />
+                </svg>
+              </span>
+            </button>
+            <span class="hero__mode-label mono" aria-hidden="true">siang</span>
+          </div>
+        </div>
+        <div class="hero__foot reveal">
+          <p class="hero__lede">
+            Saya Ferrol, software engineer dengan pengalaman 1,5+ tahun di lingkungan kementerian
+            dan proyek freelance. Saya mengubah alur kerja manual jadi aplikasi web, dari
+            antarmuka dan API sampai rilis.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#proyek">Lihat proyek</a>
+            <a class="link" href="mailto:ferrolazkimashudi@gmail.com">Email saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Ringkasan halaman">
+      <div class="site-max">
+        <ul class="stats__list reveal">
+          <li>
+            <span class="stat">1,5+</span>
+            <span class="stat__label">Tahun pengalaman</span>
+          </li>
+          <li>
+            <span class="stat">07</span>
+            <span class="stat__label">Proyek</span>
+          </li>
+          <li>
+            <span class="stat">02</span>
+            <span class="stat__label">Juara 1 kompetisi</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section work" id="proyek" aria-labelledby="work-title">
+      <div class="site-max">
+        <div class="section-head">
+          <p class="eyebrow mono reveal">01 / Proyek</p>
+          <h2 class="h2 reveal" id="work-title">Tiga proyek yang mewakili cara saya membangun sistem.</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="case case--a reveal">
+            <div class="case__thumb" aria-hidden="true">
+              <img src="assets/proyek/maxpro-1200.webp"
+                srcset="assets/proyek/maxpro-600.webp 600w, assets/proyek/maxpro-1200.webp 1200w"
+                sizes="(min-width: 900px) 46vw, (min-width: 650px) 62vw, 92vw" width="1200" height="791"
+                loading="lazy" decoding="async" alt="">
+              <span class="case__tag mono">Aplikasi web, Outsourcing</span>
+              <span class="case__num">01</span>
+            </div>
+            <h3 class="h5 case__title">Maxpro</h3>
+            <p class="case__meta mono">Freelance · 2024–2026</p>
+            <p class="case__desc">Platform berbasis web untuk mengelola proses outsourcing. Saya mengerjakan backend,
+              migrasi API dari Express.js ke NestJS, dan desain database MySQL.</p>
+          </article>
+
+          <article class="case case--b reveal">
+            <div class="case__thumb" aria-hidden="true">
+              <img src="assets/proyek/peta-bima-1200.webp"
+                srcset="assets/proyek/peta-bima-600.webp 600w, assets/proyek/peta-bima-1200.webp 1200w"
+                sizes="(min-width: 900px) 46vw, (min-width: 650px) 62vw, 92vw" width="1200" height="750"
+                loading="lazy" decoding="async" alt="">
+              <span class="case__tag mono">Dashboard, Riset</span>
+              <span class="case__num">02</span>
+            </div>
+            <h3 class="h5 case__title">Peta Bima</h3>
+            <p class="case__meta mono">Kemendiktisaintek · 2025</p>
+            <p class="case__desc">Dasbor pemetaan riset nasional yang menghubungkan pernyataan masalah riset dengan
+              delapan fokus Asta Cita. Kementerian memakainya sebagai acuan utama untuk melihat celah riset per wilayah,
+              institusi, dan fokus.</p>
+          </article>
+
+          <article class="case case--c reveal">
+            <div class="case__thumb" aria-hidden="true">
+              <img src="assets/proyek/ksti-1200.webp"
+                srcset="assets/proyek/ksti-600.webp 600w, assets/proyek/ksti-1200.webp 1200w"
+                sizes="(min-width: 900px) 46vw, (min-width: 650px) 62vw, 92vw" width="1200" height="750"
+                loading="lazy" decoding="async" alt="">
+              <span class="case__tag mono">Website acara</span>
+              <span class="case__num">03</span>
+            </div>
+            <h3 class="h5 case__title">KSTI 2025</h3>
+            <p class="case__meta mono">Kemendiktisaintek · 2025</p>
+            <p class="case__desc">Website resmi Konvensi Sains, Teknologi, dan Industri Indonesia. Mencakup pendaftaran,
+              absensi, jadwal, dan informasi untuk 7.000+ peserta.</p>
+          </article>
+        </div>
+
+        <div class="work-foot reveal">
+          <a class="link work-foot__link" href="proyek.html">Lihat semua 7 proyek <span aria-hidden="true">↗</span></a>
+          <p class="work-foot__note mono">Indeks lengkap: pemerintahan, produk, marketplace, blockchain.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="layanan" aria-labelledby="services-title">
+      <div class="site-max">
+        <div class="section-head">
+          <p class="eyebrow mono reveal">02 / Layanan</p>
+          <h2 class="h2 reveal" id="services-title">Dari kebutuhan sampai rilis.</h2>
+        </div>
+
+        <ul class="services__list">
+          <li>
+            <details class="service-acc">
+              <summary class="service">
+                <span class="service__name">Aplikasi web</span>
+                <span class="service__meta">
+                  <span class="service__desc">Alur yang jelas, dari antarmuka sampai integrasi pihak ketiga.</span>
+                  <span class="service__toggle mono">
+                    <span class="service__toggle-open">Alur kerja</span>
+                    <span class="service__toggle-close">Tutup</span>
+                    <span class="service__toggle-icon" aria-hidden="true"></span>
+                  </span>
+                </span>
+              </summary>
+              <div class="service__panel">
+                <div class="service__panel-inner">
+                  <div class="services__workflow-head">
+                    <p class="mono services__workflow-label">Alur kerja aplikasi web</p>
+                    <p class="services__workflow-note">Lima langkah dari kebutuhan sampai rilis.</p>
+                  </div>
+                  <ol class="workflow">
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">01</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Kebutuhan &amp; alur</h3>
+                        <p class="workflow__desc">Alur pengguna, data yang ditampilkan, dan batasan teknis dipetakan
+                          sebelum membangun layar.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">02</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Struktur antarmuka</h3>
+                        <p class="workflow__desc">Layar dipecah jadi komponen, termasuk state kosong, loading, dan
+                          error.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">03</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Integrasi API</h3>
+                        <p class="workflow__desc">Data dari API disambungkan ke antarmuka, dengan autentikasi dan
+                          penanganan kegagalan request.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">04</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Uji lintas layar</h3>
+                        <p class="workflow__desc">Alur utama diuji di desktop dan mobile, termasuk keyboard, validasi,
+                          dan kasus tepi.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">05</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Rilis &amp; perbaikan</h3>
+                        <p class="workflow__desc">Aplikasi di-deploy, error dipantau, lalu perbaikan dirilis bertahap.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details class="service-acc">
+              <summary class="service">
+                <span class="service__name">API &amp; data</span>
+                <span class="service__meta">
+                  <span class="service__desc">REST API, autentikasi, otorisasi, dan skema MySQL/PostgreSQL yang mudah
+                    dirawat.</span>
+                  <span class="service__toggle mono">
+                    <span class="service__toggle-open">Alur kerja</span>
+                    <span class="service__toggle-close">Tutup</span>
+                    <span class="service__toggle-icon" aria-hidden="true"></span>
+                  </span>
+                </span>
+              </summary>
+              <div class="service__panel">
+                <div class="service__panel-inner">
+                  <div class="services__workflow-head">
+                    <p class="mono services__workflow-label">Alur kerja API &amp; data</p>
+                    <p class="services__workflow-note">Lima langkah dari kontrak sampai rilis.</p>
+                  </div>
+                  <ol class="workflow">
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">01</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Kontrak &amp; model data</h3>
+                        <p class="workflow__desc">Kebutuhan dan alur UI dipetakan jadi resource, endpoint, dan skema
+                          database sebelum implementasi.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">02</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Batas per lapisan</h3>
+                        <p class="workflow__desc">Controller menangani request, service menyimpan logika, repository
+                          mengakses data. Validasi dilakukan di pintu masuk.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">03</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Akses yang jelas</h3>
+                        <p class="workflow__desc">Autentikasi, otorisasi, dan pembatasan akses ditentukan per endpoint
+                          sejak awal.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">04</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Respons yang konsisten</h3>
+                        <p class="workflow__desc">Format sukses, error, dan status code disamakan di semua endpoint,
+                          agar klien tahu apa yang harus ditangani.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">05</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Uji &amp; rilis</h3>
+                        <p class="workflow__desc">Kontrak diuji, log dan metrik dipasang, lalu deploy dengan migrasi,
+                          konfigurasi, dan proses berhenti yang aman.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details class="service-acc">
+              <summary class="service">
+                <span class="service__name">Deployment</span>
+                <span class="service__meta">
+                  <span class="service__desc">Docker dan server produksi, dengan perhatian pada keandalan dan keamanan
+                    saat sistem dipakai.</span>
+                  <span class="service__toggle mono">
+                    <span class="service__toggle-open">Alur kerja</span>
+                    <span class="service__toggle-close">Tutup</span>
+                    <span class="service__toggle-icon" aria-hidden="true"></span>
+                  </span>
+                </span>
+              </summary>
+              <div class="service__panel">
+                <div class="service__panel-inner">
+                  <div class="services__workflow-head">
+                    <p class="mono services__workflow-label">Alur kerja deployment</p>
+                    <p class="services__workflow-note">Lima langkah dari commit sampai produksi.</p>
+                  </div>
+                  <ol class="workflow">
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">01</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Lingkungan &amp; secret</h3>
+                        <p class="workflow__desc">Konfigurasi per environment dan secret dipisahkan dari kode;
+                          kredensial statis tidak disimpan di repo.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">02</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Build &amp; image</h3>
+                        <p class="workflow__desc">Build yang konsisten dalam image multi-stage, berjalan non-root, dan
+                          dipindai kerentanannya.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">03</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Pipeline &amp; migrasi</h3>
+                        <p class="workflow__desc">Test, lint, build, dan migrasi database berjalan lewat pipeline
+                          sebelum rilis.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">04</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Rilis bertahap</h3>
+                        <p class="workflow__desc">Health check dan rolling update memindahkan trafik bertahap, dengan
+                          rollback yang sudah disiapkan.</p>
+                      </div>
+                    </li>
+                    <li class="workflow__step">
+                      <span class="workflow__num mono" aria-hidden="true">05</span>
+                      <div class="workflow__body">
+                        <h3 class="workflow__title">Pantau &amp; rawat</h3>
+                        <p class="workflow__desc">Log, metrik, dan alert dipasang untuk membaca kesehatan sistem
+                          setelah rilis.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Teknologi yang dipakai">
+      <div class="marquee__track">
+        <ul class="marquee__group">
+          <li>TypeScript</li>
+          <li>NestJS</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Laravel</li>
+          <li>Go</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+        </ul>
+        <ul class="marquee__group" aria-hidden="true">
+          <li>TypeScript</li>
+          <li>NestJS</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Laravel</li>
+          <li>Go</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section notes" aria-labelledby="notes-title">
+      <div class="site-max">
+        <div class="section-head">
+          <p class="eyebrow mono reveal">03 / Cara kerja</p>
+          <h2 class="h2 reveal" id="notes-title">Tiga prinsip yang saya pegang di setiap proyek.</h2>
+        </div>
+
+        <ol class="notes__grid">
+          <li class="note reveal">
+            <span class="note__num mono">01</span>
+            <p class="note__text">Kontrak dulu, kode kemudian. Resource, respons, dan skema data disepakati sebelum
+              implementasi, agar kedua sisi bekerja dari pemahaman yang sama.</p>
+          </li>
+          <li class="note reveal">
+            <span class="note__num mono">02</span>
+            <p class="note__text">Batas yang jelas. Autentikasi dan validasi di pintu masuk, logika di service, akses data
+              di repository, dengan error yang konsisten.</p>
+          </li>
+          <li class="note reveal">
+            <span class="note__num mono">03</span>
+            <p class="note__text">Rilis dengan bukti. Test, log, konfigurasi, dan jalur shutdown sudah siap sebelum
+              deploy, supaya sistem mudah dipantau dan aman dihentikan.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontak" aria-labelledby="contact-title">
+      <div class="site-max contact__inner">
+        <p class="eyebrow mono reveal">04 / Kontak</p>
+        <h2 class="display contact__title reveal" id="contact-title">Terbuka untuk peran software engineer dan proyek
+          aplikasi web.</h2>
+        <div class="contact__actions reveal">
+          <a class="btn" href="mailto:ferrolazkimashudi@gmail.com">ferrolazkimashudi@gmail.com</a>
+          <p class="contact__note">Ceritakan peran atau proyeknya lewat email, lengkap dengan konteks dan tenggat. Saya
+            akan balas dengan langkah berikutnya.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-max footer__top">
+      <a class="link" href="mailto:ferrolazkimashudi@gmail.com">ferrolazkimashudi@gmail.com</a>
+      <ul class="footer__social">
+        <li><a class="link" href="https://www.linkedin.com/in/ferrol-azki-mashudi/">LinkedIn</a></li>
+        <li><a class="link" href="https://github.com/ferrol143">GitHub</a></li>
+        <li><a class="link" href="index.html">Beranda</a></li>
+      </ul>
+      <p class="footer__copy mono">© <span id="year">2026</span> Ferrol Azki Mashudi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
