@@ -124,7 +124,7 @@
       title: "Maxpro",
       kicker: "Produk / Outsourcing · Freelance",
       summary:
-        "Maxpro adalah platform ERP SaaS multi-tenant untuk perusahaan penyedia jasa tenaga kerja. Perusahaan mengelola cabang, jabatan, karyawan, presensi dengan validasi lokasi, shift, cuti, work order, checklist, dan evaluasi. Perusahaan klien memantau absensi, work order, dan checklist di lokasi mereka. Saya mengerjakan backend, migrasi API dari Express.js ke NestJS, dan desain database MySQL.",
+        "Maxpro adalah platform ERP SaaS multi-tenant untuk perusahaan penyedia jasa tenaga kerja. Perusahaan mengelola cabang, jabatan, karyawan, presensi dengan validasi lokasi, shift, cuti, work order, checklist, dan evaluasi. Perusahaan klien memantau absensi, work order, dan checklist di lokasi mereka.",
       facts: [
         [
           "Peran",
