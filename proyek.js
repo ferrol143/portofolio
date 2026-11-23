@@ -124,20 +124,23 @@
       title: "Maxpro",
       kicker: "Produk / Outsourcing · Freelance",
       summary:
-        "Platform berbasis web untuk mengelola proses outsourcing. Saya mengerjakan backend, migrasi API dari Express.js ke NestJS, dan desain database MySQL.",
+        "Maxpro adalah platform ERP SaaS multi-tenant untuk perusahaan penyedia jasa tenaga kerja. Perusahaan mengelola cabang, jabatan, karyawan, presensi dengan validasi lokasi, shift, cuti, work order, checklist, dan evaluasi. Perusahaan klien memantau absensi, work order, dan checklist di lokasi mereka. Saya mengerjakan backend, migrasi API dari Express.js ke NestJS, dan desain database MySQL.",
       facts: [
-        ["Peran", "Backend, desain database, dan migrasi API dari Express.js ke NestJS."],
+        [
+          "Peran",
+          "Backend, desain database, migrasi API dari Express.js ke NestJS, dan deployment.",
+        ],
         [
           "Konteks",
           "Freelance backend engineer di PT Bangun Sinar Indonesia, 2024–2026.",
         ],
         [
-          "Cakupan",
-          "Autentikasi, otorisasi, integrasi layanan pihak ketiga, dan deployment.",
+          "Produk",
+          "ERP SaaS multi-tenant untuk perusahaan outsourcing: presensi dengan validasi lokasi, shift dan cuti, work order, checklist, evaluasi, laporan, serta portal klien.",
         ],
         [
           "Stack",
-          "TypeScript, NestJS, Prisma, MySQL, Next.js, Tailwind CSS, Leaflet, ApexCharts.",
+          "TypeScript, NestJS, Prisma, MySQL, Next.js, React, Tailwind CSS, Leaflet, ApexCharts.",
         ],
       ],
       link: null,
