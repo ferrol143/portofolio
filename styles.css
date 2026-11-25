@@ -907,6 +907,45 @@ html[data-mode="showcase"] .hero__orb--moon {
   text-wrap: pretty;
 }
 
+.case__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.case__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: max(1.15rem, 11px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: border-color 0.4s ease;
+}
+
+.case__action span {
+  display: inline-block;
+  transition: transform 0.5s var(--ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .case__action:hover {
+    border-color: var(--accent);
+  }
+
+  .case__action:hover span {
+    transform: translate(3px, -3px);
+  }
+}
+
 .work-foot {
   display: flex;
   flex-wrap: wrap;

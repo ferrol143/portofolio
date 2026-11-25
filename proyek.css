@@ -679,12 +679,20 @@ html[data-mode="kerja"] {
   line-height: 1.2;
 }
 
-.project__open {
+.project__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.6rem;
+  margin-top: max(2.2rem, 18px);
+}
+
+.project__open,
+.project__site {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
   min-height: 44px;
-  margin-top: max(2.2rem, 18px);
   padding: max(0.7rem, 6px) 0;
   border: 0;
   border-bottom: 1px solid var(--line);
@@ -694,24 +702,34 @@ html[data-mode="kerja"] {
   font-size: max(1.3rem, 12px);
   font-weight: 500;
   line-height: 1.2;
-  cursor: pointer;
   transition:
     border-color 0.4s ease,
     color 0.4s ease;
 }
 
-.project__open span {
+.project__open {
+  cursor: pointer;
+}
+
+.project__site {
+  text-decoration: none;
+}
+
+.project__open span,
+.project__site span {
   display: inline-block;
   transition: transform 0.5s var(--ease);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .project__open:hover {
+  .project__open:hover,
+  .project__site:hover {
     border-color: var(--accent);
     color: var(--ink);
   }
 
-  .project__open:hover span {
+  .project__open:hover span,
+  .project__site:hover span {
     transform: translate(3px, -3px);
   }
 }
@@ -1094,7 +1112,9 @@ html[data-mode="kerja"] .project-dialog::backdrop {
   .index-header,
   .index-hero__actions,
   .archive__bar,
+  .project__actions,
   .project__open,
+  .project__site,
   .index-ticker,
   .project-dialog,
   .skip {

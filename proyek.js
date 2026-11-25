@@ -143,7 +143,6 @@
           "TypeScript, NestJS, Prisma, MySQL, Next.js, React, Tailwind CSS, Leaflet, ApexCharts.",
         ],
       ],
-      link: null,
     },
     aeternum: {
       title: "Aeternum",
@@ -552,7 +551,7 @@
     if (dialogLink) {
       if (data.link) {
         dialogLink.href = data.link.href;
-        dialogLink.textContent = "Buka publikasi ↗";
+        dialogLink.textContent = data.link.text || "Buka publikasi ↗";
         dialogLink.setAttribute("aria-label", data.link.label);
         dialogLink.hidden = false;
       } else {
